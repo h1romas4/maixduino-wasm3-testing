@@ -5,8 +5,8 @@
             "name": "k210",
             "includePath": [
                 "${workspaceRoot}/bitblt/**",
-                "${workspaceRoot}/../kendryte-standalone-sdk/lib/**",
-                "/home/hiromasa/toolchain/kendryte-toolchain/bin"
+                "${workspaceRoot}/kendryte-standalone-sdk/lib/**",
+                "/home/hiromasa/toolchain/kendryte-toolchain/lib"
             ],
             "cStandard": "c11",
             "cppStandard": "c++17"
