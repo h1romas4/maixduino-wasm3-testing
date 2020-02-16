@@ -6,7 +6,7 @@
             "includePath": [
                 "${workspaceRoot}/bitblt/**",
                 "${workspaceRoot}/../kendryte-standalone-sdk/lib/**",
-                "/opt/kendryte-toolchain/lib"
+                "/home/hiromasa/toolchain/kendryte-toolchain/bin"
             ],
             "cStandard": "c11",
             "cppStandard": "c++17"

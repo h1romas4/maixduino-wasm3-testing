@@ -15,11 +15,32 @@ project(${PROJ} C CXX ASM)
 include(./cmake/macros.internal.cmake)
 header_directories(${SDK_ROOT}/lib)
 header_directories(${PROJ})
+header_directories(${PROJ}/m3)
 
 # compile project
 add_source_files(
-    ${PROJ}/m3/
+    ${PROJ}/main.c
+    ${PROJ}/maixduino.c
+    ${PROJ}/lcd/lcd.c
+    ${PROJ}/lcd/st7789.c
+    ${PROJ}/m3/m3_api_libc.c
+    ${PROJ}/m3/m3_api_meta_wasi.c
+    ${PROJ}/m3/m3_api_wasi.c
+    ${PROJ}/m3/m3_bind.c
+    ${PROJ}/m3/m3_code.c
+    ${PROJ}/m3/m3_compile.c
+    ${PROJ}/m3/m3_core.c
+    ${PROJ}/m3/m3_emit.c
+    ${PROJ}/m3/m3_env.c
+    ${PROJ}/m3/m3_exec.c
+    ${PROJ}/m3/m3_info.c
+    ${PROJ}/m3/m3_module.c
+    ${PROJ}/m3/m3_optimize.c
+    ${PROJ}/m3/m3_parse.c
 )
 add_compile_flags(C
+    -Os
+    -Dd_m3LogOutput=false
+    -Dd_m3VerboseLogs=false
 )
 include(./cmake/executable.cmake)
