@@ -2,6 +2,8 @@
 
 WebAssembly interpreter [Wasm3](https://github.com/wasm3/wasm3) on Maixduino.
 
+![](https://github.com/h1romas4/maixduino-wasm3-testing/blob/master/docs/images/maixduino-wasm3-01.jpg)
+
 ## Require
 
 * [Kendryte GNU Toolchain v8.2.0-20190213](https://github.com/kendryte/kendryte-gnu-toolchain/releases/tag/v8.2.0-20190213)
