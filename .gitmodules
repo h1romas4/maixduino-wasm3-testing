@@ -1,0 +1,6 @@
+[submodule "kendryte-standalone-sdk"]
+	path = kendryte-standalone-sdk
+	url = https://github.com/kendryte/kendryte-standalone-sdk.git
+[submodule "wasm3"]
+	path = wasm3
+	url = https://github.com/wasm3/wasm3.git
