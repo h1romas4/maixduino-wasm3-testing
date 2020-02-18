@@ -41,6 +41,17 @@ make
 kflash -p /dev/ttyUSB0 -b 1500000 -B goE -s -t bitblt.bin
 ```
 
+### maxiduino-wasm3-lifegame
+
+```
+cd maxiduino-wasm3-lifegame
+mkdir build && cd build
+# set -DTOOLCHAIN to directory Kendryte GNU Toolchain bin path
+cmake .. -DPROJ=lifegame -DSDK_ROOT=./kendryte-standalone-sdk -DTOOLCHAIN=/opt/kendryte-toolchain/bin
+make
+kflash -p /dev/ttyUSB0 -b 1500000 -B goE -s -t lifegame.bin
+```
+
 ## Dependencies
 
 |name|version|
