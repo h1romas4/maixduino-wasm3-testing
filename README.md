@@ -4,6 +4,8 @@ WebAssembly interpreter [Wasm3](https://github.com/wasm3/wasm3) on Maixduino.
 
 ![](https://github.com/h1romas4/maixduino-wasm3-testing/blob/master/docs/images/maixduino-wasm3-02.jpg)
 
+[https://www.youtube.com/watch?v=Hc2sbhGMrig](https://www.youtube.com/watch?v=Hc2sbhGMrig)
+
 [https://www.youtube.com/watch?v=FSZE7P-SMDc](https://www.youtube.com/watch?v=FSZE7P-SMDc)
 
 ## Require
