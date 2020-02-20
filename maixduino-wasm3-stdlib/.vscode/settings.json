@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.toml": "toml",
+        "shared.h": "c",
+        "chrono": "c",
+        "string.h": "c",
+        "lcd.h": "c",
+        "unistd.h": "c"
+    }
+}
