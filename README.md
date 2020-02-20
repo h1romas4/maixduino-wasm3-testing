@@ -32,10 +32,10 @@ git clone --recursive https://github.com/h1romas4/maixduino-wasm3-testing.git
 cd maixduino-wasm3-testing
 ```
 
-### maxiduino-wasm3-bitblt
+### maixduino-wasm3-bitblt
 
 ```
-cd maxiduino-wasm3-bitblt
+cd maixduino-wasm3-bitblt
 mkdir build && cd build
 # set -DTOOLCHAIN to directory Kendryte GNU Toolchain bin path
 cmake .. -DPROJ=bitblt -DSDK_ROOT=./kendryte-standalone-sdk -DTOOLCHAIN=/opt/kendryte-toolchain/bin
@@ -43,10 +43,10 @@ make
 kflash -p /dev/ttyUSB0 -b 1500000 -B goE -s -t bitblt.bin
 ```
 
-### maxiduino-wasm3-lifegame
+### maixduino-wasm3-lifegame
 
 ```
-cd maxiduino-wasm3-lifegame
+cd maixduino-wasm3-lifegame
 mkdir build && cd build
 # set -DTOOLCHAIN to directory Kendryte GNU Toolchain bin path
 cmake .. -DPROJ=lifegame -DSDK_ROOT=./kendryte-standalone-sdk -DTOOLCHAIN=/opt/kendryte-toolchain/bin
