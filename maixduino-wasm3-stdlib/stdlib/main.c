@@ -25,6 +25,10 @@ M3Result LinkFunction(IM3Runtime runtime) {
     IM3Module module = runtime->modules;
     const char* env = "env";
 
+    // TODO: Fatal: m3_CallWithArgs: [trap] stack overflow
+    // @see ../wasm/package.json
+    //  --runtime full
+    //  --runtime full --use abort=
     // m3_LinkRawFunction(module, env, "abort", "v(iiii)",  &env_abort);
 
     return m3Err_none;
@@ -56,7 +60,7 @@ static void init_wasm(void)
     result = m3_LoadModule(runtime, module);
     if (result) FATAL("m3_LoadModule: %s", result);
 
-    // link arduino library
+    // link function
     result = LinkFunction(runtime);
     if (result) FATAL("LinkArduino %s", result);
 
@@ -79,7 +83,7 @@ void main(int argc, char* argv[])
     // init wasm
     init_wasm();
 
-    // Initialize the module with the universe's width and height
+    // call function width stdlib
     result = m3_CallWithArgs(init, 0, NULL);
     if (result) FATAL("m3_CallWithArgs: %s", result);
     uint32_t value = *(uint32_t*)(runtime->stack);
