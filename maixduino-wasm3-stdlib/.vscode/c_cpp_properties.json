@@ -6,7 +6,7 @@
             "includePath": [
                 "${workspaceRoot}/stdlib/**",
                 "${workspaceRoot}/kendryte-standalone-sdk/lib/**",
-                "/home/hiromasa/toolchain/kendryte-toolchain/lib/**"
+                "/home/hiromasa/toolchain/kendryte-toolchain/**"
             ],
             "cStandard": "c11",
             "cppStandard": "c++17"
