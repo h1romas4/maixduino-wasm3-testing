@@ -6,5 +6,10 @@
         "string.h": "c",
         "lcd.h": "c",
         "unistd.h": "c"
+    },
+    "cmake.configureSettings" : {
+        "PROJ": "lifegame",
+        "SDK_ROOT": "./kendryte-standalone-sdk",
+        "TOOLCHAIN": "${env:KENDRYTE_TOOLCHAIN_HOME}/bin"
     }
 }
