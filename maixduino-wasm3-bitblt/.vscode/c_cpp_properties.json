@@ -6,10 +6,11 @@
             "includePath": [
                 "${workspaceRoot}/bitblt/**",
                 "${workspaceRoot}/kendryte-standalone-sdk/lib/**",
-                "/home/hiromasa/toolchain/kendryte-toolchain/**"
+                "${env:KENDRYTE_TOOLCHAIN_HOME}/**"
             ],
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
